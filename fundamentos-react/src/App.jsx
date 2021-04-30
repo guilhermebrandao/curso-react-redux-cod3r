@@ -8,12 +8,19 @@ import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
+import ListaAlunos from './components/repeticao/ListaAlunos'
 
 export default _ =>
   <div id="app">
     <h2>Fundamentos React</h2>
 
     <div className="Cards">
+    <Card
+        titulo="#06 - Repeticao"
+        color="#FF4C65">
+        <ListaAlunos />
+      </Card>
+
       <Card
         titulo="#05 - Familia"
         color="#00C8F8">
