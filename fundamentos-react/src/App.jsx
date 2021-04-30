@@ -13,23 +13,30 @@ export default _ =>
 
     <div className="Cards">
       <Card
-        titulo="Aleatorio">
+        titulo="Aleatorio"
+        color="#FA6900">
         <Aleatorio
           min={1}
           max={60} />
       </Card>
 
-      <Card titulo="Fragmento">
+      <Card
+        titulo="Fragmento"
+        color="#E94C6F">
         <Fragmento />
       </Card>
 
-      <Card titulo="ComParametro">
+      <Card
+        titulo="ComParametro"
+        color="#E8B71A">
         <ComParametro
           titulo="Segundo Componente"
           subtitulo="Muito legal!!" />
       </Card>
 
-      <Card titulo="ComParametro">
+      <Card
+        titulo="ComParametro"
+        color="#588C73">
         <Primeiro />
       </Card>
     </div>
