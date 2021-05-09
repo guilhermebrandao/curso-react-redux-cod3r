@@ -24,6 +24,7 @@ export default _ =>
         color="#982395"> 
         <ParOuImpar numero={20}/>
         <UsuarioInfo usuario={{ nome: 'Guilherme' }}/>
+        <UsuarioInfo />
       </Card>
 
       <Card
