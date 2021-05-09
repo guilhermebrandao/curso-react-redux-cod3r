@@ -1,7 +1,7 @@
-import React from 'core-js/library/fn/reflect/es7/metadata'
+import React from 'react'
 import If from './If'
 
-export default propos => {
+export default props => {
   const usuario = props.usuario || {}
   return (
     <div>
