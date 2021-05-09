@@ -1,6 +1,6 @@
 export default props => {
   if (props.test) {
-    return propos.children
+    return props.children
   } else {
     return false
   }
