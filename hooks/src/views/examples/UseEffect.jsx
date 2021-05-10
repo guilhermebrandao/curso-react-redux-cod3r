@@ -6,9 +6,11 @@ const UseEffect = (props) => {
 
     const [number, setNumber] = useState(1)
     const [fatorial, setFatorial] = useState(1)
+    const [isPar, setPar] = useState(false)
 
     useEffect(() => {
         setFatorial(calcFatorial(number))
+        setPar(number % 2 === 0)
     }, [number])
 
     useEffect(() => {
@@ -16,7 +18,9 @@ const UseEffect = (props) => {
             document.title = 'Fatorial Gigante'
         }
     }, [fatorial])
-    
+
+
+
     function calcFatorial(n) {
         if (n < 0) return -1
         if (n === 0) return 1
@@ -43,7 +47,10 @@ const UseEffect = (props) => {
 
             <SectionTitle title="Exercicio #02" />
             <div className="center">
-
+                <div>
+                    <span className="text">Status: </span>
+                    <span className="text red">{isPar ? 'Par' : 'Ímpar'}</span>
+                </div>
             </div>
 
         </div>
